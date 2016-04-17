@@ -1,0 +1,112 @@
+Apr 16, 2016 5:31:42 PM org.fpauer.auth.rs.Configuration <clinit>
+INFO: Loading auth server configuration...
+Apr 16, 2016 5:31:42 PM org.fpauer.auth.rs.AuthProxyServer startServer
+INFO: Starting rest-auth-proxy server...
+Apr 16, 2016 5:31:42 PM com.sun.jersey.api.core.PackagesResourceConfig init
+INFO: Scanning for root resource and provider classes in the packages:
+  org.fpauer.auth.rs
+  org.fpauer.auth.rs.ldap
+Apr 16, 2016 5:31:43 PM com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO: Root resource classes found:
+  class org.fpauer.auth.rs.ldap.LdapAuthService
+Apr 16, 2016 5:31:43 PM com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO: Provider classes found:
+  class org.fpauer.auth.rs.AuthExceptionMapper
+Apr 16, 2016 5:31:43 PM com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO: Initiating Jersey application, version 'Jersey: 1.19 02/11/2015 03:25 AM'
+Apr 16, 2016 5:31:44 PM org.glassfish.grizzly.http.server.NetworkListener start
+INFO: Started listener bound to [127.0.1.1:9998]
+Apr 16, 2016 5:31:44 PM org.glassfish.grizzly.http.server.HttpServer start
+INFO: [HttpServer] Started.
+Apr 16, 2016 5:31:44 PM org.fpauer.auth.rs.AuthProxyServer run
+INFO: rest-auth-proxy server started, press ctrl-c to shutdown
+Apr 16, 2016 5:31:46 PM org.fpauer.auth.rs.ldap.LdapAuthService authenticate
+FINE: New request recieved
+Apr 16, 2016 5:31:46 PM org.fpauer.auth.rs.ldap.LdapAuthService authenticate
+FINE: Authenticating request
+Apr 16, 2016 5:31:46 PM org.fpauer.auth.rs.ldap.LdapAuthentication authenticate
+FINE: User authenticated.
+Apr 16, 2016 5:31:50 PM org.fpauer.auth.rs.ldap.LdapAuthService authenticate
+FINE: New request recieved
+Apr 16, 2016 5:31:50 PM org.fpauer.auth.rs.ldap.LdapAuthService authenticate
+FINE: Authenticating request
+Apr 16, 2016 5:31:50 PM org.fpauer.auth.rs.ldap.LdapAuthentication authenticate
+FINE: User authenticated.
+Apr 16, 2016 5:34:06 PM org.fpauer.auth.rs.ldap.LdapAuthService authenticate
+FINE: New request recieved
+Apr 16, 2016 5:34:06 PM org.fpauer.auth.rs.ldap.LdapAuthService authenticate
+FINE: Authenticating request
+Apr 16, 2016 5:34:06 PM org.fpauer.auth.rs.AuthExceptionMapper toResponse
+FINE: Error authenticating user: [LDAP: error code 49 - Unable to bind as user 'uid=asdas,ou=people,dc=example,dc=com' because no such entry exists in the server.]
+Apr 16, 2016 5:50:15 PM org.fpauer.auth.rs.ldap.LdapAuthService authenticate
+FINE: New request recieved
+Apr 16, 2016 5:50:15 PM org.fpauer.auth.rs.ldap.LdapAuthService authenticate
+FINE: Authenticating request
+Apr 16, 2016 5:50:15 PM org.fpauer.auth.rs.AuthExceptionMapper toResponse
+FINE: Error authenticating user: [LDAP: error code 49 - Unable to bind as user 'uid=admin,ou=people,dc=example,dc=com' because no such entry exists in the server.]
+Apr 16, 2016 5:52:34 PM org.fpauer.auth.rs.ldap.LdapAuthService authenticate
+FINE: New request recieved
+Apr 16, 2016 5:52:34 PM org.fpauer.auth.rs.ldap.LdapAuthService authenticate
+FINE: Authenticating request
+Apr 16, 2016 5:52:34 PM org.fpauer.auth.rs.AuthExceptionMapper toResponse
+FINE: Error authenticating user: [LDAP: error code 49 - Unable to bind as user 'uid=admin,ou=people,dc=example,dc=com' because no such entry exists in the server.]
+Apr 16, 2016 6:31:16 PM org.fpauer.auth.rs.ldap.LdapAuthService authenticate
+FINE: New request recieved
+Apr 16, 2016 6:31:16 PM org.fpauer.auth.rs.ldap.LdapAuthService authenticate
+FINE: Authenticating request
+Apr 16, 2016 6:31:16 PM org.fpauer.auth.rs.ldap.LdapAuthentication authenticate
+FINE: User authenticated.
+Apr 16, 2016 6:34:04 PM org.fpauer.auth.rs.ldap.LdapAuthService authenticate
+FINE: New request recieved
+Apr 16, 2016 6:34:04 PM org.fpauer.auth.rs.ldap.LdapAuthService authenticate
+FINE: Authenticating request
+Apr 16, 2016 6:34:04 PM org.fpauer.auth.rs.ldap.LdapAuthentication authenticate
+FINE: User authenticated.
+Apr 16, 2016 6:42:50 PM org.fpauer.auth.rs.ldap.LdapAuthService authenticate
+FINE: New request recieved
+Apr 16, 2016 6:42:50 PM org.fpauer.auth.rs.ldap.LdapAuthService authenticate
+FINE: Authenticating request
+Apr 16, 2016 6:42:50 PM org.fpauer.auth.rs.ldap.LdapAuthentication authenticate
+FINE: User authenticated.
+Apr 16, 2016 6:53:37 PM org.fpauer.auth.rs.ldap.LdapAuthService authenticate
+FINE: New request recieved
+Apr 16, 2016 6:53:37 PM org.fpauer.auth.rs.ldap.LdapAuthService authenticate
+FINE: Authenticating request
+Apr 16, 2016 6:53:37 PM org.fpauer.auth.rs.AuthExceptionMapper toResponse
+FINE: Error authenticating user: [LDAP: error code 49 - Unable to bind as user 'uid=dssad,ou=people,dc=example,dc=com' because no such entry exists in the server.]
+Apr 16, 2016 6:53:44 PM org.fpauer.auth.rs.ldap.LdapAuthService authenticate
+FINE: New request recieved
+Apr 16, 2016 6:53:44 PM org.fpauer.auth.rs.ldap.LdapAuthService authenticate
+FINE: Authenticating request
+Apr 16, 2016 6:53:44 PM org.fpauer.auth.rs.ldap.LdapAuthentication authenticate
+FINE: User authenticated.
+Apr 16, 2016 6:54:22 PM org.fpauer.auth.rs.ldap.LdapAuthService authenticate
+FINE: New request recieved
+Apr 16, 2016 6:54:22 PM org.fpauer.auth.rs.ldap.LdapAuthService authenticate
+FINE: Authenticating request
+Apr 16, 2016 6:54:22 PM org.fpauer.auth.rs.ldap.LdapAuthentication authenticate
+FINE: User authenticated.
+Apr 16, 2016 6:55:17 PM org.fpauer.auth.rs.ldap.LdapAuthService authenticate
+FINE: New request recieved
+Apr 16, 2016 6:55:17 PM org.fpauer.auth.rs.ldap.LdapAuthService authenticate
+FINE: Authenticating request
+Apr 16, 2016 6:55:17 PM org.fpauer.auth.rs.ldap.LdapAuthentication authenticate
+FINE: User authenticated.
+Apr 16, 2016 8:11:16 PM org.fpauer.auth.rs.ldap.LdapAuthService authenticate
+FINE: New request recieved
+Apr 16, 2016 8:11:16 PM org.fpauer.auth.rs.ldap.LdapAuthService authenticate
+FINE: Authenticating request
+Apr 16, 2016 8:11:16 PM org.fpauer.auth.rs.ldap.LdapAuthentication authenticate
+FINE: User authenticated.
+Apr 16, 2016 8:15:52 PM org.fpauer.auth.rs.ldap.LdapAuthService authenticate
+FINE: New request recieved
+Apr 16, 2016 8:15:52 PM org.fpauer.auth.rs.ldap.LdapAuthService authenticate
+FINE: Authenticating request
+Apr 16, 2016 8:15:52 PM org.fpauer.auth.rs.ldap.LdapAuthentication authenticate
+FINE: User authenticated.
+Apr 16, 2016 8:16:03 PM org.fpauer.auth.rs.ldap.LdapAuthService authenticate
+FINE: New request recieved
+Apr 16, 2016 8:16:03 PM org.fpauer.auth.rs.ldap.LdapAuthService authenticate
+FINE: Authenticating request
+Apr 16, 2016 8:16:03 PM org.fpauer.auth.rs.AuthExceptionMapper toResponse
+FINE: Error authenticating user: [LDAP: error code 49 - Unable to bind as user 'uid=admin,ou=people,dc=example,dc=com' because no such entry exists in the server.]
