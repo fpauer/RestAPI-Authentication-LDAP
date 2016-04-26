@@ -15,20 +15,29 @@
  */
 package org.fpauer.auth.rs.ldap;
 
-import org.fpauer.auth.rs.*;
-import org.fpauer.auth.rs.ldap.LdapConfig.Keys;
-import org.fpauer.auth.rs.AccessConfig;
-
-import com.sun.jersey.core.util.Base64;
-
-import javax.ws.rs.*;
-import javax.ws.rs.core.MediaType;
-
-import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Logger;
+
+import javax.ws.rs.FormParam;
+import javax.ws.rs.GET;
+import javax.ws.rs.POST;
+import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
+
+import org.fpauer.auth.rs.AccessConfig;
+import org.fpauer.auth.rs.AccessToken;
+import org.fpauer.auth.rs.AuthException;
+import org.fpauer.auth.rs.AuthResponse;
+import org.fpauer.auth.rs.AuthService;
+import org.fpauer.auth.rs.Configuration;
+import org.fpauer.auth.rs.StringUtils;
+import org.fpauer.auth.rs.ldap.LdapConfig.Keys;
+
+import com.sun.jersey.core.util.Base64;
 
 /**
  * @author Fernando Pauer
@@ -69,7 +78,6 @@ public class LdapAuthService implements AuthService {
         int expired_minutes = StringUtils.toInt(Configuration.get(server, AccessConfig.Keys.ACCESS_EXPIRED_MINUTES), AccessConfig.DEFAULT_ACCESS_EXPIRED_MINUTES);
         
     	//revert the acessToken and check if the token is expired.
-        AuthResponse response = new AuthResponse();
         AccessToken token = extractAccessToken(accessToken);
         if(token.getLastAccess()!=null)
         {

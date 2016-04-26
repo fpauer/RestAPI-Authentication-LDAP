@@ -1,24 +1,54 @@
-Apr 18, 2016 4:41:46 PM org.fpauer.auth.rs.Configuration <clinit>
+Apr 18, 2016 11:48:50 PM org.fpauer.auth.rs.Configuration <clinit>
 INFO: Loading auth server configuration...
-Apr 18, 2016 4:41:46 PM org.fpauer.auth.rs.AuthProxyServer startServer
+Apr 18, 2016 11:48:51 PM org.fpauer.auth.rs.AuthProxyServer startServer
 INFO: Starting rest-auth-proxy server...
-Apr 18, 2016 4:41:46 PM com.sun.jersey.api.core.PackagesResourceConfig init
+Apr 18, 2016 11:48:51 PM com.sun.jersey.api.core.PackagesResourceConfig init
 INFO: Scanning for root resource and provider classes in the packages:
   org.fpauer.auth.rs
   org.fpauer.auth.rs.ldap
-Apr 18, 2016 4:41:47 PM com.sun.jersey.api.core.ScanningResourceConfig logClasses
+Apr 18, 2016 11:48:51 PM com.sun.jersey.api.core.ScanningResourceConfig logClasses
 INFO: Root resource classes found:
   class org.fpauer.auth.rs.ldap.LdapAuthService
-Apr 18, 2016 4:41:47 PM com.sun.jersey.api.core.ScanningResourceConfig logClasses
+Apr 18, 2016 11:48:51 PM com.sun.jersey.api.core.ScanningResourceConfig logClasses
 INFO: Provider classes found:
   class org.fpauer.auth.rs.AuthExceptionMapper
-Apr 18, 2016 4:41:47 PM com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+Apr 18, 2016 11:48:51 PM com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
 INFO: Initiating Jersey application, version 'Jersey: 1.19 02/11/2015 03:25 AM'
-Apr 18, 2016 4:41:48 PM org.glassfish.grizzly.http.server.NetworkListener start
+Apr 18, 2016 11:48:54 PM org.glassfish.grizzly.http.server.NetworkListener start
 INFO: Started listener bound to [127.0.1.1:9998]
-Apr 18, 2016 4:41:48 PM org.glassfish.grizzly.http.server.HttpServer start
+Apr 18, 2016 11:48:54 PM org.glassfish.grizzly.http.server.HttpServer start
 INFO: [HttpServer] Started.
-Apr 18, 2016 4:41:48 PM org.fpauer.auth.rs.AuthProxyServer run
+Apr 18, 2016 11:48:54 PM org.fpauer.auth.rs.AuthProxyServer run
 INFO: rest-auth-proxy server started, press ctrl-c to shutdown
-Apr 18, 2016 4:42:00 PM org.fpauer.auth.rs.AuthProxyServer stopServer
+Apr 19, 2016 12:04:41 AM org.fpauer.auth.rs.ldap.LdapAuthService authenticate
+FINE: New request recieved
+Apr 19, 2016 12:04:41 AM org.fpauer.auth.rs.ldap.LdapAuthService authenticate
+FINE: Authenticating request
+Apr 19, 2016 12:04:43 AM org.fpauer.auth.rs.AuthExceptionMapper toResponse
+FINE: Error authenticating user: [LDAP: error code 49 - Unable to bind as user 'uid=bob,ou=people,dc=example,dc=com' because the provided password was incorrect.]
+Apr 19, 2016 12:08:21 AM org.fpauer.auth.rs.ldap.LdapAuthService authenticate
+FINE: New request recieved
+Apr 19, 2016 12:08:21 AM org.fpauer.auth.rs.ldap.LdapAuthService authenticate
+FINE: Authenticating request
+Apr 19, 2016 12:08:21 AM org.fpauer.auth.rs.ldap.LdapAuthentication authenticate
+FINE: User authenticated.
+Apr 19, 2016 12:08:51 AM org.fpauer.auth.rs.ldap.LdapAuthService authenticate
+FINE: New request recieved
+Apr 19, 2016 12:08:51 AM org.fpauer.auth.rs.ldap.LdapAuthService authenticate
+FINE: Authenticating request
+Apr 19, 2016 12:08:51 AM org.fpauer.auth.rs.ldap.LdapAuthentication authenticate
+FINE: User authenticated.
+Apr 19, 2016 12:23:38 AM org.fpauer.auth.rs.ldap.LdapAuthService authenticate
+FINE: New request recieved
+Apr 19, 2016 12:23:38 AM org.fpauer.auth.rs.ldap.LdapAuthService authenticate
+FINE: Authenticating request
+Apr 19, 2016 12:23:38 AM org.fpauer.auth.rs.ldap.LdapAuthentication authenticate
+FINE: User authenticated.
+Apr 19, 2016 12:24:04 AM org.fpauer.auth.rs.ldap.LdapAuthService authenticate
+FINE: New request recieved
+Apr 19, 2016 12:24:04 AM org.fpauer.auth.rs.ldap.LdapAuthService authenticate
+FINE: Authenticating request
+Apr 19, 2016 12:24:04 AM org.fpauer.auth.rs.ldap.LdapAuthentication authenticate
+FINE: User authenticated.
+Apr 19, 2016 12:28:41 AM org.fpauer.auth.rs.AuthProxyServer stopServer
 INFO: Shutting down rest-auth-proxy server...

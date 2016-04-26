@@ -21,7 +21,12 @@ package org.fpauer.auth.rs;
  *
  */
 public class AuthException extends RuntimeException {
-    public AuthException() {
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	public AuthException() {
         super();
     }
 
