@@ -117,7 +117,7 @@ public class AuthProxyServer implements Runnable {
                 authServer.stopServer();
                 authServerThread.interrupt();
 
-                System.out.println("Shutdown complete.");
+                logger.fine("Shutdown complete.");
                 System.out.flush();
             }
         });
