@@ -31,7 +31,7 @@ import org.fpauer.auth.rs.ldap.LdapConfig.Keys;
  */
 public class Configuration {
     private final static Properties serverConfig = new Properties();
-    private final static Map<String, Map<String, String>> authServerConfig = new HashMap<String, Map<String, String>>();
+    private final static Map<String, Map<String, String>> authServerConfig = new HashMap<>();
     private static Logger logger = Logger.getLogger(Configuration.class.getName());
 
     static {
@@ -49,7 +49,7 @@ public class Configuration {
                     lh = lh.trim();
 
                     if (!StringUtils.isBlank(lh)) {
-                        Map<String, String> map = new HashMap<String, String>();
+                        Map<String, String> map = new HashMap<>();
 
                         for (Keys k : Keys.values()) {
                             map.put(k.key(), serverConfig.getProperty(lh + "." + k.key()));

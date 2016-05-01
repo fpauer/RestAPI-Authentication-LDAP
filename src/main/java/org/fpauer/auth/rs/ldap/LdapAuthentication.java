@@ -56,7 +56,7 @@ public class LdapAuthentication {
         searchCtls.setSearchScope(SearchControls.SUBTREE_SCOPE);
         searchCtls.setCountLimit(0);
 
-        Hashtable<String, String> env = new Hashtable<String, String>();
+        Hashtable<String, String> env = new Hashtable<>();
         env.put(Context.INITIAL_CONTEXT_FACTORY, "com.sun.jndi.ldap.LdapCtxFactory");
         env.put(Context.PROVIDER_URL, "ldap://" + ldapHost + ":" + ldapPort);
         env.put(Context.SECURITY_AUTHENTICATION, "simple");
@@ -68,7 +68,7 @@ public class LdapAuthentication {
         logger.fine("User authenticated.");
 
         NamingEnumeration<SearchResult> answer = ctxGC.search(searchBase, searchFilter, searchCtls);
-        Map<String, List<String>> retMap = new HashMap<String, List<String>>();
+        Map<String, List<String>> retMap = new HashMap<>();
         if (answer.hasMoreElements()) {
             Attributes attrs = answer.next().getAttributes();
 
@@ -82,7 +82,7 @@ public class LdapAuthentication {
                     List<String> valList = retMap.get(attr.getID());
 
                     if (valList == null) {
-                        valList = new ArrayList<String>();
+                        valList = new ArrayList<>();
                         retMap.put(attr.getID(), valList);
                     }
 

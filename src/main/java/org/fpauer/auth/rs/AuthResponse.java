@@ -27,7 +27,7 @@ public class AuthResponse {
     private String status;
     private String accessToken;
     
-    private Map<String, List<String>> lookup = new HashMap<String, List<String>>();
+    private Map<String, List<String>> lookup = new HashMap<>();
 
     public AuthResponse() {
         status = "SUCCESS";
